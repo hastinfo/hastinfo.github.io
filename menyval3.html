@@ -1,0 +1,59 @@
+<!-- Tala om att det är html-dokument -->
+<!DOCTYPE html>
+
+<!-- Alla element ska finnas inom html-taggen -->
+<html>
+<!-- I head placeras saker som inte är innehåll, tex css-filer och javascript -->
+<head>
+    <!-- Dessa 3 meta-taggar måste vara först i head för att alla tecken (åäö) och Bootstrap ska fungera korrekt -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Koppla in Bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <!-- Koppla in egen CSS-fil style.css OBS! Ha den som sista css-fil -->
+    <link rel="stylesheet" type ="text/css" href="css/style.css">
+
+    <!-- Koppla in och JQuery Bootstrap javascript -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- Koppla in egen JavaScript-fil funktion.js OBS! Ha den som sista js-fil -->
+    <script type="text/javascript" src="js/funktion.js"></script>
+
+    <!-- I title skriver du titeln som webbläsarfönstret ska ha när den här sidan besöks-->
+    <title>Hemsidans titel</title>
+</head>
+
+<!-- I body finns allt innehåll på hemsidan -->
+<body>
+
+
+   <nav class="nav navbar-inverse navbar-static-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Hästinfo</a>
+                <ul class="nav navbar-nav">
+                    <li><a href="menyval1.html">Om hästar</a></li>
+                    <li><a href="menyval2.html">Ridsport</a></li>
+                    <li><a href="menyval3.html">Om mig</a></li>
+                </ul>
+            </div>
+        </nav>
+    
+
+<h2>Om mig</h2>
+<div class="col-sm-6"> <p>Jag är en tjej som rider rätt så mycket och har en egen ponny som bor även på en gård. Jag älskar att få vara bland djuren men även att få vara ute i naturen. Det som jag älskar mest med rigningen är att hoppa och att rida ut i skogen. Förutom att rida så tycker jag om att baka.</p>    <img src="bilder/ommig2.jpeg" width="75%">
+</div>
+
+
+
+
+
+
+</div>
+
+<img src="bilder/ommig.jpeg" width="25%"> 
+
+</body>
+</html>

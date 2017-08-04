@@ -1,0 +1,84 @@
+<!-- Tala om att det är html-dokument -->
+<!DOCTYPE html>
+
+<!-- Alla element ska finnas inom html-taggen -->
+<html>
+<!-- I head placeras saker som inte är innehåll, tex css-filer och javascript -->
+<head>
+    <!-- Dessa 3 meta-taggar måste vara först i head för att alla tecken (åäö) och Bootstrap ska fungera korrekt -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Koppla in Bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <!-- Koppla in egen CSS-fil style.css OBS! Ha den som sista css-fil -->
+    <link rel="stylesheet" type ="text/css" href="css/style.css">
+
+<!-- Angular -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+
+<!-- AngularFire -->
+<script src="https://cdn.firebase.com/libs/angularfire/2.2.0/angularfire.min.js"></script>
+    <!-- Koppla in och JQuery Bootstrap javascript -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- Koppla in egen JavaScript-fil funktion.js OBS! Ha den som sista js-fil -->
+    <script type="text/javascript" src="js/funktion.js"></script>
+
+    <!-- I title skriver du titeln som webbläsarfönstret ska ha när den här sidan besöks-->
+    <title>Hemsidans titel</title>
+</head>
+
+<!-- I body finns allt innehåll på hemsidan -->
+<body ng-app="app">
+
+   
+ <!-- I nav finns alla länkar eller knappar för navigering, tex en menyrad -->
+        <nav class="nav navbar-inverse navbar-static-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Hästinfo</a>
+                <ul class="nav navbar-nav">
+                    <li><a href="menyval1.html">Om hästar</a></li>
+                    <li><a href="menyval2.html">Ridsport</a></li>
+                    <li><a href="menyval3.html">Om mig</a></li>
+                </ul>
+            </div>
+        </nav>
+   
+    <h2>Om hästar</h2>
+      
+    <div class="col-sm-6"> 
+     <img src="bilder/meny.jpg" width="60%"> 
+     <p>Hästar är flockdjur som som blir lättskrämda o är väldigt känsliga. När dem är i en flock så är det den häst som bestämmer över dem andra och när dem ska sova så är det oftast en eller två som har koll om rovdjuren kommer mot dem.</p>
+    </div>      
+
+     <div class="col-sm-6"> <img src="bilder/omhästar2.jpeg" width="60%">
+       <p>Det finns olika färger som hästarna har. Det finns fux, så är hästen oftast orangeröd men dem kan även ha rödorange päls och ljus man (håret) och svans. Det finns även brun och då har hästen svart man och svans men brun päls. Isabell är när dem har gulbrun päls men en ljus man, svans och ben. En gulbrun häst (förr kallades för bork) är lik som Isabell-färgen men den har mörk man svans och ben. Skimmel så är hästen vit som är även känslig för solen och då kan dem få skimmel sjuka. Dessutom så kan hästarna vara svarta. Dem fläckiga hästarna s färg kallas för skäck. </p>
+ 
+
+</div>
+
+<div ng-controller="KommentarCtrl">
+<h2> kommentarsfält </h2>
+<div ng-repeat="kommentar in kommentarer">
+    <p><b>{{kommentar.skribent}}</b> {{kommentar.text}}</p>
+</div>
+
+
+  <form ng-submit="addComment()">
+    <div class="form-group">
+        <input placeholder="Ditt namn" type="text" class="form-control" ng-model="kommentar.skribent">
+    </div>
+    <div class="form-group">
+        <input placeholder="Din kommentar" type="text" class="form-control" ng-model="kommentar.text">
+    </div>
+    <button type="submit" class="btn btn-primary">Kommentera</button>
+</form>
+</div>
+</body>
+</html>

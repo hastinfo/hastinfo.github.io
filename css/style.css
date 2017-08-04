@@ -1,0 +1,61 @@
+h1 {
+	color:skyblue;   
+}
+h2 {
+	background-color: :skyblue;  
+}
+p {
+	font-size: 16px;
+	color: black;
+}
+body {
+	background-color: 
+}
+#meny.minbild
+p{
+    color: black;
+    background-color:#71e2b5;
+}
+body {
+	#71e2b5 
+}
+
+
+.navbar-inverse {
+    background-color:#2d1638;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color:white;
+}
+
+.navbar-inverse .navbar-brand {
+    color:white;
+    font-family: 'Griffy', cursive;
+}
+
+body{
+	background-image: url("../bilder/bild.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 100vh;
+	position: relative;
+}
+
+p {
+    color: white;
+   font-size: 18px;
+}
+
+h2{
+	color: white;
+}
+
+font-family: 'Salsa', cursive; 
+
+#hastar {
+	background-color: white;
+}
+
+
+

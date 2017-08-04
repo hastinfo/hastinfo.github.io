@@ -1,0 +1,65 @@
+<!-- Tala om att det är html-dokument -->
+<!DOCTYPE html>
+
+<!-- Alla element ska finnas inom html-taggen -->
+<html>
+<!-- I head placeras saker som inte är innehåll, tex css-filer och javascript -->
+<head>
+    <!-- Dessa 3 meta-taggar måste vara först i head för att alla tecken (åäö) och Bootstrap ska fungera korrekt -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Koppla in Bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <!-- Koppla in egen CSS-fil style.css OBS! Ha den som sista css-fil -->
+    <link rel="stylesheet" type ="text/css" href="css/style.css">
+
+    <!-- Koppla in och JQuery Bootstrap javascript -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- Koppla in egen JavaScript-fil funktion.js OBS! Ha den som sista js-fil -->
+    <script type="text/javascript" src="js/funktion.js"></script>
+
+    <!-- I title skriver du titeln som webbläsarfönstret ska ha när den här sidan besöks-->
+    <title>Hemsidans titel</title>
+</head>
+
+<!-- I body finns allt innehåll på hemsidan -->
+<body>
+
+   <nav class="nav navbar-inverse navbar-static-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Hästinfo</a>
+                <ul class="nav navbar-nav">
+                    <li><a href="menyval1.html">Om hästar</a></li>
+                    <li><a href="menyval2.html">Ridsport</a></li>
+                    <li><a href="menyval3.html">Om mig</a></li>
+                </ul>
+            </div>
+        </nav>
+
+<h2>Ridsport</h2>
+<div class="row">
+<div class="col-sm-5">   
+<img src="bilder/dressyr.jpeg" width="100%"> 
+</div>
+<div class="col-sm-5">
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/DcDLLxgWa_Y" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+ <p>Dressyren går ut på att man ska kunna samarbeta med både häst och ryttare. När man ska rida i takt och få hästen att böja lite på halsen "gå på tygeln". När man tävlar inom dressyren så ska man rida efter ett program och domarna dömer bland annat om hästen är spänd eller mm... Det kommer även att vara musik till (det ser ut som att hästen dansar).</p> 
+   
+   <div class="row">
+   <div class="col-sm-5">
+   <img src="bilder/hoppning.jpeg" width="100%">
+   </div> 
+   <div class="col-sm-5">
+   <iframe width="100%" height="315" src="https://www.youtube.com/embed/pUX39mpZzcw" frameborder="0" allowfullscreen></iframe>
+   </div>
+   </div>
+   <p>Hoppningen går ut att man ska kunna hoppa över vissa hinder så kort tid man kan och då gäller det att man samarbetar med sin partner ute på banan. innan tävlingen börjar så ska ryttaren gå en bana för att kunna rida rätt och att kunna mäta galoppsprången. Ett nerslag ger fyra fel och om man inte har ridit klart banan inom en vis tid så får man ett fel.</p>
+
+</body>
+</html>
